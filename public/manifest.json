@@ -1,0 +1,22 @@
+{
+  "name": "CareerHub PWA",
+  "short_name": "CareerHub",
+  "description": "Temukan lowongan kerja, magang, dan pekerjaan paruh waktu mahasiswa secara terpusat.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2563EB",
+  "theme_color": "#2563EB",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

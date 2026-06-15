@@ -15,11 +15,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
+        // Seed Student User
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Mahasiswa Test',
+            'email' => 'student@careerhub.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'role' => 'student',
         ]);
+
+        // Seed Admin User
+        User::factory()->create([
+            'name' => 'Admin Test',
+            'email' => 'admin@careerhub.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'role' => 'admin',
+        ]);
+
+        // Run Vacancy Seeder
+        $this->call(VacancySeeder::class);
     }
 }
